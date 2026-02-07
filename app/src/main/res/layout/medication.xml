@@ -3,14 +3,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center">
+    android:padding="24dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Medication Screen"
+        android:text="Medication Tracker"
         android:textSize="28sp"
-        android:textStyle="bold" />
-</LinearLayout>
+        android:textStyle="bold"/>
 
+    <EditText
+        android:id="@+id/etMedName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medication Name"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etMedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time (HH:MM)"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddMed"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Add Medication"
+        android:textSize="22sp"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
