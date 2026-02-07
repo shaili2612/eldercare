@@ -20,25 +20,16 @@ public class MainActivity extends AppCompatActivity {
         btnAppointments = findViewById(R.id.btnAppointments);
         btnEmergency = findViewById(R.id.btnEmergency);
 
-        btnMedication.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MedicationActivity.class);
-            startActivity(intent);
-        });
+        btnMedication.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, MedicationActivity.class)));
 
-        btnDiabetes.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, DiabetesActivity.class);
-            startActivity(intent);
-        });
+        btnDiabetes.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, DiabetesActivity.class)));
 
-        btnAppointments.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, AppointmentsActivity.class);
-            startActivity(intent);
-        });
+        btnAppointments.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AppointmentsActivity.class)));
 
         btnEmergency.setOnClickListener(v -> {
+            // Simple placeholder for emergency
             Toast.makeText(MainActivity.this, "Emergency Mode Activated!", Toast.LENGTH_LONG).show();
             // Later: add SMS/call functionality
         });
     }
 }
-
