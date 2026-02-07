@@ -1,1 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ElderCare"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnMedication"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Medications"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnDiabetes"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Diabetes"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Appointments"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="EMERGENCY"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
 
